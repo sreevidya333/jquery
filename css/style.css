@@ -1,0 +1,36 @@
+body{
+	margin:0px;
+	padding: 0px;
+	background-color: black;
+}
+h1{
+	color:white;
+	text-align: center;
+	margin-top: 45px;
+	margin-bottom: 50px;
+}
+.container{
+	width:1200px;
+	margin:auto 0px;
+}
+.owl-nav{
+	color:white;
+}
+.owl-prev{
+	position: absolute!important;
+    left: 0px!important;
+    font-size: 56px!important;
+    background-color: wheat!important;
+    color: sienna!important;
+    top: 81px!important;
+    width: 34px!important;
+}
+.owl-next{
+	position: absolute!important;
+    left: 96.8%!important;
+    top: 95px!important;
+    font-size: 56px!important;
+    color: sienna!important;
+    width: 34px!important;
+    background-color: wheat!important;
+}

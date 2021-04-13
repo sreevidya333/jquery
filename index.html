@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>	
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+
+</head>
+<body>
+<header>
+	<h1> Responsive owl-carsoul </h1>
+ <section class="title">
+      <div class="row">
+        <div class="large-12 columns">
+          <h1></h1>
+        </div>
+      </div>
+ </section>
+    <section id="demos">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+             <img src="images/image_1.jpg"/>
+              <h4>1</h4>
+            </div>
+            <div class="item">
+            	<img src="images/image_2.jpg"/>
+              <h4>2</h4>
+            </div>
+            <div class="item">
+            	<img src="images/image_3.jpg"/>
+              <h4>3</h4>
+            </div>
+            <div class="item">
+            	<img src="images/image_4.jpg"/>
+              <h4>4</h4>
+            </div>
+            <div class="item">
+            	<img src="images/image_1.jpg"/>
+              <h4>5</h4>
+            </div>
+            <div class="item">
+            	<img src="images/image_2.jpg"/>
+              <h4>6</h4>
+            </div>
+            <div class="item">
+            	<img src="images/image_3.jpg"/>
+              <h4>7</h4>
+            </div>
+            <div class="item">
+            	<img src="images/image_4.jpg"/>
+              <h4>8</h4>
+            </div>
+            <div class="item">
+            	<img src="images/image_1.jpg"/>
+              <h4>9</h4>
+            </div>
+            <div class="item">
+            	<img src="images/image_2.jpg"/>
+              <h4>10</h4>
+            </div>
+            <div class="item">
+            	<img src="images/image_3.jpg"/>
+              <h4>11</h4>
+            </div>
+            <div class="item">
+            	<img src="images/image_4.jpg"/>
+              <h4>12</h4>
+            </div>
+          </div>
+
+            <script>
+            $(document).ready(function() {
+              $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                  0: {
+                    items: 1,
+                    nav: true
+                  },
+                  600: {
+                    items: 3,
+                    nav: false
+                  },
+                  1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false,
+                    margin: 20
+                  }
+                }
+              })
+            })       
+          </script>
+       
+
+        <h1> Merge Demo | Owl Carousel </h1>
+        <section id="demos">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="owl-carousel owl-theme">
+            <div class="item" data-merge="1">
+            <img src="images/image_1.jpg"/>
+              <h4>1</h4>
+            </div>
+            <div class="item" data-merge="2">
+            <img src="images/image_2.jpg" height="270px"/>
+              <h4>2</h4>
+            </div>
+            <div class="item" data-merge="1">
+            <img src="images/image_3.jpg"/>	
+              <h4>3</h4>
+            </div>
+            <div class="item" data-merge="3">
+            <img src="images/image_4.jpg"height="270px"/>	
+              <h4>4</h4>
+            </div>
+            <div class="item" data-merge="6">
+            <img src="images/image_1.jpg" height="270px" />	
+              <h4>6</h4>
+            </div>
+            <div class="item" data-merge="2">
+            <img src="images/image_2.jpg" height="270px"/>	
+              <h4>7</h4>
+            </div>
+            <div class="item" data-merge="1">
+            <img src="images/image_3.jpg"/>	
+              <h4>8</h4>
+            </div>
+            <div class="item" data-merge="3">
+            <img src="images/image_4.jpg" height="270px" />	
+              <h4>9</h4>
+            </div>
+            <div class="item">
+            <img src="images/image_1.jpg"/>	
+              <h4>10</h4>
+            </div>
+            <div class="item">
+            <img src="images/image_2.jpg"/>	
+              <h4>11</h4>
+            </div>
+            <div class="item" data-merge="2">
+            <img src="images/image_3.jpg" height="270px" />	
+              <h4>12</h4>
+            </div>
+            <div class="item">
+            <img src="images/image_4.jpg"/>	
+              <h4>13</h4>
+            </div>
+            <div class="item">
+            <img src="images/image_1.jpg"/>	
+              <h4>14</h4>
+            </div>
+            <div class="item">
+            <img src="images/image_2.jpg"/>	
+              <h4>15</h4>
+            </div>
+          </div>
+
+          <script>
+            $(document).ready(function() {
+              $('.owl-carousel').owlCarousel({
+                items: 5,
+                loop: true,
+                margin: 10,
+                merge: true,
+                responsive: {
+                  678: {
+                    mergeFit: true
+                  },
+                  1000: {
+                    mergeFit:false
+                  }
+                }
+              });
+            })
+
+          </script>
+     
+
+         
+   
+    <script src="js/highlight.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
