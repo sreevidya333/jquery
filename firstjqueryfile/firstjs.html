@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width , initial-scal=1.0">
+  <title>Document</title>
+  <style>
+    div{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #input1{
+        width:220px;
+        height:50px;
+        border-radius: 30px;
+        background-color: rgb(11, 12, 12);
+        color:cornsilk;
+    }
+    *{
+        background-color: rgb(112, 5, 28);
+    }
+  </style>
+   <script>
+    function fn(){
+       var inputRef= document.getElementById('input1')
+       var h21Ref=  document.getElementById('h21')
+         var inputValue = inputRef.value
+           h21Ref.innerText = inputValue
+     }
+   </script>
+ </head> 
+ <body>
+       <div>
+         <form>
+             <input type="text" onkeypress="fn()" id="input1"/>
+         </form>
+            <h2 id="h21"></h2>
+       </div>
+       <script src="jquery-3.6.0.js"></script>
+ </body>  
+</html>

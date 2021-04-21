@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width , initial-scal=1.0">
+  <title>Document</title>
+  <style>
+    div{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #input1{
+        width:220px;
+        height:50px;
+        border-radius: 30px;
+        background-color: rgb(49, 218, 218);
+        color:black;
+    }
+    *{
+        background-color: rgb(39, 1, 9);
+    }
+    #h21{
+        color:cornsilk;
+    }
+  </style>
+   
+ </head> 
+ <body>
+       <div>
+         <form>
+             <input type="text" onkeypress="fn()" id="input1"/>
+         </form>
+            <h2 id="h21"></h2>
+       </div>
+       <script src="jquery-3.6.0.js"></script>
+       <script>
+           $('#input1').keypress(function(){
+               $('#h21').text($(this).val())
+           })
+       </script>
+ </body>  
+</html>
